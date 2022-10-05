@@ -11,7 +11,11 @@ closeMenu = () => {
 }
 
 openMenu = () => {
-    navlink.style.right = "0";
+    // navlink.style.right = "0";
+    navlink.classList.toggle("active-navbar")
+}
+window.onscroll = () => {
+  navlink.classList.remove("active-navbar")
 }
 //=====================auto text ================
 const text = document.querySelector(".second-text");
